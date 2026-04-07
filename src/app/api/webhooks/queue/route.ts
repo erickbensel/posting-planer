@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { NextResponse } from "next/server";
 
 // Worker wurde durch Vercel Cron ersetzt (/api/cron/publish)
