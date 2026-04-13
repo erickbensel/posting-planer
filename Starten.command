@@ -52,4 +52,13 @@ echo ""
 # Browser öffnen
 open http://localhost:3000
 
+# Claude Code in neuem Terminal-Fenster starten
+PROJECT_DIR="$(pwd)"
+osascript <<EOF
+tell application "Terminal"
+  do script "cd \"$PROJECT_DIR\" && claude"
+  activate
+end tell
+EOF
+
 wait $DEV_PID
